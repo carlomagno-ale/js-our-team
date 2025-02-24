@@ -2,7 +2,6 @@
 
 
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,4 +12,50 @@
 body {
 
     font-family: "Fredoka", serif;
+}
+
+:root {
+
+    --title-color: #e53170;
+    --card-color: black;
+    --card-text-color: white;
+    --card-mail-color: #44a1d5;
+
+}
+
+
+.card {
+
+    max-width: 450px;
+    border-radius: 0;
+    background-color: var(--card-color);
+    color: var(--card-text-color);
+    border: none;
+}
+
+h1{
+    color: var(--title-color);
+}
+
+
+h5 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-body{
+
+    padding: 0;
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+#card-mail{
+
+    margin-top: 0.3rem;
+    color: var(--card-mail-color);
 }

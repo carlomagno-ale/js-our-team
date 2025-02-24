@@ -58,22 +58,22 @@ function getObjHtml(object) {
   const { name, role, email, img } = object
 
   const markup = `
-  <div class="d-flex gap-2">
-   <div class="card">
-            <div class="row g-0">
+    <div class="col-4">
+      <div class="card">
+          <div class="row">
               <div class="col-md-4">
-                <img src="${img}" class="img-fluid rounded-start" alt="">
+                <img src="${img}" class="img-fluid float-left" alt="">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 id="card-name">${name}</h5>
-                  <p id="card-role">${role}</p>
-                  <p id="card-mail">${email}</p>
+                  <div id="card-role">${role}</div>
+                  <div id="card-mail">${email}</div>
                 </div>
               </div>
             </div>
+      </div>
      </div>
-  </div>
   `
   return markup
 

@@ -58,8 +58,8 @@ function getObjHtml(object) {
   const { name, role, email, img } = object
 
   const markup = `
-    <div class="col-4">
-      <div class="card">
+    <div class="col-md-4">
+      <div class="card mb-4">
           <div class="row">
               <div class="col-md-4">
                 <img src="${img}" class="img-fluid float-left" alt="">
